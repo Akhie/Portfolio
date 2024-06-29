@@ -1,0 +1,127 @@
+.education {
+    margin-top: 230px;
+    text-align: left;
+    align-items: center;
+    font-family: monospace;
+}
+
+.btech {
+    margin: 50px 80px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.btechlogo {
+    position: absolute;
+    grid-column: 1 / 6;
+    grid-row: 1 / -1;
+    background-color: var(--Green);
+    border-radius: 30px 30px 10px 10px;
+}
+.btech img {
+    max-width: 500px;
+    max-height: 250px;
+    mix-blend-mode: darken;
+}
+
+.btechabout {
+    position: relative;
+    vertical-align: middle;
+    grid-row: 1 / -1;
+    grid-column: 5 / -1;
+    color: var(--Slate);
+    text-align: right;
+}
+.btechabout h4 {
+    margin: 20px 0px;
+    font-weight: bold;
+    color: var(--Green);
+}
+.smallscreen {
+    display: none;
+}
+.btechdetails {
+    background-color: #07223d;
+    border-radius: 5px;
+    padding: 15px;
+}
+.btechdetails h5 {
+    color: var(--LightestSlate);
+}
+.btechdetails p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.school {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: -30px;
+}
+.high {
+    padding-right: 40px;
+    padding: 20px 30px 10px 30px;
+    background-color: #07223d;
+    border-radius: 10px 0px 0px 10px;
+    transition: transform 0.3s ease;
+}
+.senior {
+    background-color: #07223d;
+    padding: 20px 30px 10px 30px;
+    border-radius: 0px 10px 10px 0px;
+    transition: transform 0.3s ease;
+}
+.school h5 {
+    color: var(--LightestSlate);
+}
+.school p {
+    color: var(--Slate);
+    margin-top: 15px;
+}
+
+.high:hover, .senior:hover {
+    transform: translateY(-10px);
+}
+.high:hover h5, .senior:hover h5  {
+    color: var(--Green);
+    transform: translateY(-2px);
+}
+
+/* Mobile View */ 
+@media screen and (max-width: 480px) {
+    .education {
+        margin-top: 120px;
+    }
+    .btech {
+        width: 100%;
+        margin: 50px auto;
+        display: block;
+    }
+    .bigscreen {
+        display: none;
+    }
+    .smallscreen {
+        display: block;
+    }
+    .btech h5, .school h5 {
+        font-size: 18px;
+    }
+    .btech p, .school p {
+        font-size: 13px;
+    }
+    .btechlogo img {
+        max-height: 40px;
+        margin-left: 10px
+    }
+    .school {
+        margin-top: -25px;
+    }
+    .high {
+        padding: 10px 10px 0px 10px;
+    }
+    .senior {
+        padding: 10px 10px 0px 10px;
+    }
+}

@@ -1,0 +1,150 @@
+.aboutme {
+    margin: 180px 50px;
+    content: center;
+    text-align: left;
+    width: 100%;
+    color: var(--Slate)
+}
+
+.heading {
+    font-size: 27px;
+    font-weight: 900;
+    word-spacing: -10px;
+    color: var(--LightestSlate)
+}
+.heading::after {
+    background-color: var(--LightestNavy);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.aboutmain {
+    margin-top: 40px;
+    margin-right: 90px;
+    display: flex;
+}
+
+.aboutcontent {
+    width: 60%;
+    margin-right: 20px;
+}
+.aboutcontent .count {
+    display: inline-block;
+}
+.aboutcontent p {
+    font-family: sans-serif;
+}
+
+.technologies {
+    display: flex;
+}
+.techdiv {
+    width: 40%;
+    margin-top: -5px;
+    list-style: none; 
+}
+
+.techdiv li {
+    font-size: 13px;
+    margin-top: 7px;
+    margin-left: -16px;
+}
+.techdiv li::before {
+    content: '▹';
+    color: var(--Green);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.Mypic {
+    width:40%;
+    margin-left: 20px;
+    display: flex;
+}
+
+.me {
+    background-color: cyan;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+.me:hover {
+    background-color: white;
+}
+.me img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    mix-blend-mode: darken;
+}
+
+.backme {
+    height: 300px;
+    width: 300px;
+    border: 2px solid var(--Green);
+    border-radius: 5px;
+    top: 20px;
+    right: -20px; 
+    position: relative;
+    z-index: 0;
+    -webkit-transition: .3s all;
+}
+.me:hover ~ .backme {
+    top: 15px;
+    right: -15px;
+}
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    .aboutme {
+        width: 100%;
+        margin-left: auto;
+    }
+    h5 .count {
+        font-size: 14px;
+    }
+    h5 .heading {
+        font-size: 17px;
+        word-spacing: -6px;
+    }
+    .aboutmain{
+        display: block;
+        width: 100%;
+    }
+    .aboutcontent {
+        width: 100%;
+    }
+    .aboutcontent p {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+    .techdiv {
+        width: 50%;
+    }
+    .Mypic {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .me {
+        width: 200px;
+        height: 200px;
+    }
+    .me img {
+        width: 200px;
+        height: 200px;
+    }
+    .backme {
+        height: 200px;
+        width: 200px;
+    }
+}

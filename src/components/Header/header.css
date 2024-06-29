@@ -1,0 +1,75 @@
+.header {
+    z-index: 100;
+    position: sticky;
+    background-color:var(--Navy);
+    top: -20px;
+    transition: top 0.3s;
+}
+
+.btn-toggler {
+    color: var(--Green);
+}
+.toggler-icon div {
+    width: 35px;
+    height: 2px;
+    background-color: var(--Green);
+    margin: 6px 0;
+}
+
+.navbar-brand {
+    color : white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-item , .btn-resume span {
+    margin: 0px 5px;
+    font-family: 'SFMono';
+    font-size: 13px;  
+}
+.nav-item a{
+    color: var(--LightestSlate);
+}
+
+.nav-item a:active , .nav-item a:hover , .count , .active span{
+    color: #64ffda;
+    
+}
+
+.nav-link:active , .active {
+    border: 1px dashed #64ffda;
+    border-width: 2px;
+}
+
+
+.btn-resume {
+    border: 1px solid #64ffda;
+    background-color: transparent;
+    color: #64ffda;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.btn-resume:hover {
+background-color: #233554;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .header {
+        margin-left: -50px;
+        padding-left: 20px;
+        margin-right: -50px;
+        padding-right: 20px;
+    }
+    #navbarSupportedContent ul li:first-child {
+        margin-top: 25px;
+    } 
+    .nav-link {
+        margin: 10px auto;
+    }
+    .btn-resume {
+        margin-top: 20px;
+    }
+}
+

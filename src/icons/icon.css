@@ -1,0 +1,47 @@
+.feather {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    transition: transform 0.2s ease; 
+}
+.feather:hover, .feather:focus , .email:hover, .email:focus {
+    color: var(--Green);
+    transform: translate(0px, -3px);
+}
+.feather:active, .activefeather {
+    color: var(--Green);
+    outline: 1px dashed var(--Green);
+    outline-offset: 5px;
+}
+.email {
+    font-family: 'SFMono';
+    font-size: 10px;
+    padding: 6px 0px 0px 0px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    transition: transform 0.2s ease;
+}
+.email p {
+    letter-spacing: 1.5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.projectlink {
+    width: 20px;
+    height: 25px;
+}
+.projectlink:hover {
+    color: var(--Green);
+}
+.project-external-link {
+    width: 22px;
+}
+.project-folder {
+    width: 40px;
+    height: 40px;
+}
+.activeproject {
+    color: var(--Green);
+    outline: 1px dashed var(--Green);
+    outline-offset: 5px;
+}

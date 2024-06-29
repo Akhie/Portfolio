@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+  background-color: var(--Navy);
+  color: var(--LightSlate);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  font-family: 'SFMono';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
+/* Loader css */
+.none {
+  display: none;
+}
+.show {
+  display: block;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+.loadericon {
+  display: flex;
+  max-width: 150px;
+  max-height: 200px;
+}
+
+  /* svg css */
+.pc {
+  stroke-dashoffset: 4000;
+  stroke-dasharray: 4000;
+  -webkit-animation: dash 4s linear forwards 0.5s;
+  -o-animation: dash 4s linear forwards 0.5s;
+  -moz-animation: dash 4s linear forwards 0.5s;
+  animation: dash 4s linear forwards 0.5;
+}
+.A, .K, .H, .I, .E {
+  opacity: 0;
+  -webkit-animation: popup 0.5s ease forwards 2.5s;
+  -o-animation: popup 0.5s ease forwards 2.5s;
+  -moz-animation: popup 0.5s ease forwards 2.5s;
+  animation: popup 0.5s ease forwards 2.5s;
+}
+.rightline {
+  stroke-dashoffset: 343;
+  stroke-dasharray: 343;
+  -webkit-animation: moveright 4s linear forwards 0.5s;
+  -o-animation: moveright 4s linear forwards 0.5s;
+  -moz-animation: moveright 4s linear forwards 0.5s;
+  animation: moveright 4s linear forwards 0.5;
+}
+.leftline {
+  stroke-dashoffset: 150;
+  stroke-dasharray: 343;
+  -webkit-animation: moveleft 4s linear backwards 0.5s;
+  -o-animation: moveleft 4s linear backwards 0.5s;
+  -moz-animation: moveleft 4s linear backwards 0.5s;
+  animation: moveleft 4s linear backwards 0.5;
+}
+.vline1 {
+  opacity: 0;
+  -webkit-animation: popup 4s ease forwards 1.5s;
+  -o-animation: popup 4s ease forwards 1.5s;
+  -moz-animation: popup 4s ease forwards 1.5s;
+  animation: popup 4s ease forwards 1.5s;
+}
+.vline2 {
+  stroke-dashoffset: 343;
+  stroke-dasharray: 343;
+  -webkit-animation: moveright 1s ease forwards 1s;
+  -o-animation: moveright 1s ease forwards 1s;
+  -moz-animation: moveright 1s ease forwards 1s;
+  animation: moveright 1s ease forwards 1s;
+}
+.vline3 {
+  stroke-dashoffset: 343;
+  stroke-dasharray: 343;
+  -webkit-animation: moveright 1s ease forwards 1.5s;
+  -o-animation: moveright 1s ease forwards 1.5s;
+  -moz-animation: moveright 1s ease forwards 1.5s;
+  animation: moveright 1s ease forwards 1.5s;
+}
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 4000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes moveright {
+  from {
+    stroke-dashoffset:343;
+  }
+  to {
+    stroke-dashoffset:0;
+  }
+}
+@keyframes moveleft {
+  from {
+    stroke-dashoffset: -230;
+  }
+  to {
+    stroke-dashoffset: 343;
+  }
+}
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*  main css */
+.mainleft {
+  z-index: 0 ; 
+  left: 50px;
+  bottom: -60px;
+  position: fixed;
+}
+.mainleft div {
+  margin: 20px 0px;
+}
+.mainbody {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.mainright {
+  z-index: 0;
+  right: 50px;
+  bottom: -60px;
+  position: fixed;
+}
+
+/* footer css */
+.footerlinks {
+  display: none;
+}
+.footerlinks div {
+  margin: 15px;
+  margin-bottom: 8px;
+}
+/* Main css for Mobile View */
+@media screen and (max-width: 480px) {
+  .mainleft {
+    display: none;
+  }
+  .mainbody {
+    margin: 0px -15px;
+    width: 110%;
+  }
+  .mainright {
+    display: none;
+  }
+
+  .footerlinks {
+    display: flex;
+    justify-content: center;
+  }
+}
