@@ -31,7 +31,7 @@ export default function Education() {
                         <div className="btechdetails">
                             <h5 className="underline" onClick={() => onClickCollege()}>National Institute of Technology, Uttarakhand </h5>
                             <p>Computer Science & Engineering <br/>
-                                2018 - 2022 (Final Year Student)<br/>
+                                2018 - 2022 <br/>
                                 CGPA: 8.69
                             </p>
                         </div>    

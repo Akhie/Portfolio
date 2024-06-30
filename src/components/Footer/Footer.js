@@ -28,7 +28,6 @@ export default function Footer() {
             </div>
             <p style={{fontFamily:"monospace", fontSize:"13px", wordSpacing:"-1px", lineHeight:"20px" }}>
                 Desiged & Built by Akhilesh Yadav <br/>
-                while( !succeed = try() );
             </p>
         </div>
     )

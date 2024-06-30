@@ -1,10 +1,11 @@
 .samsung{
     text-align: left;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 300px;
 }
 .expHeading {
-    width: 30%;
+    width: 55%;
+    font-size: 30px;
 }
 .expHeading:hover {
     color: var(--Green);
@@ -17,14 +18,14 @@
     margin-left: -1em;
 }
 .exp {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .expTitle::before {
   display: inline-block;
       content: "";
       border-top: .1rem solid grey;
-      width: 4rem;
-      margin: 0 10px;
+      width: 5rem;
+      margin: 5px 0px;
 }
 .period {
     font-size: 9px;
@@ -34,4 +35,31 @@
     margin-top: 10px;
     margin-left: 50px;
     font-size: 10px
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    text-align: left;
+    width: 100%;
+  }
+  .samsung {
+    margin-left: 50px;
+  }
+  .expHeading {
+    width: 95%;
+    font-size: 25px;
+  }
+  .exp {
+    margin-left: 10px;
+  }
+  .expTitle::before {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid grey;
+    width: 3rem;
+    margin: 5px 0;
+  }
+  .period {
+    margin-left: 65px;
+  }
 }

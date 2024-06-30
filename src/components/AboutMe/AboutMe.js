@@ -23,9 +23,9 @@ export default function Aboutme() {
                         My interest in web development started back in 2019 when I decided to learn <span className="count underline"> HTML</span>, <span className="count underline"> CSS </span> & <span className="count underline"> PHP!</span>
                         </p>
                         <p className="mt-2">
-                            I have done Full-stack web development course on React specialization from <span className="count underline"> coursera </span>&nbsp;   
-                            where i learn <span className="count underline"> Mongodb</span>, <span className="count underline"> Express server</span>, <span className="count underline"> Reactjs </span> and <span className="count underline"> Nodejs</span>. After that i worked on 
-                            various projects where i have created multiple websites and learned a lot from them.
+                            I have professional experience of 2 years as Full-stack web developer on <span className="count underline"> Vue </span>&nbsp;
+                            & <span className="count underline"> React </span> as Frontend, <span className="count underline"> Springboot </span> as backend and <span className="count underline"> MySQL </span> as database. I worked on
+                            various projects realated to MERN stack as well where i have created multiple websites and learned a lot from them.
                         </p>
                         <p  className="mt-2">
                             Here are a few technologies I’ve been working with recently:
@@ -38,8 +38,8 @@ export default function Aboutme() {
                                     <li>Nodejs</li>
                                 </ul> 
                                 <ul className="techdiv">
-                                    <li>ReactNative</li>
-                                    <li>Firebase</li>
+                                    <li>Vue</li>
+                                    <li>Springboot</li>
                                     <li>Heroku</li>
                                 </ul>
                             </div>

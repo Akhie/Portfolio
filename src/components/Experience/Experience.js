@@ -12,7 +12,7 @@ export default function Experience() {
                         <span className="heading">Experience &nbsp; </span>
                     </h5>
                     <div className="samsung">
-                        <h1 className="expHeading underline"> Samsung </h1>
+                        <h1 className="expHeading underline"> Samsung Data Systems </h1>
                         <div className="exp">
                             <div className="expTitle"> Asst. Manager </div>
                             <p className="period"> April 2024 - Present </p>

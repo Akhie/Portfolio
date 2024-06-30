@@ -99,7 +99,7 @@ export default function About() {
                     </h1>
                 </Fade>
                 <Fade bottom delay={1200}>
-                    <p className="my-3">I’m a MERN Stack Web Developer. 
+                    <p className="my-3">I’m FullStack Web Developer.
                         Currently, I’m looking for any work from home opportunity. I Can develop 
                         website for you and I have already worked on various projects related to 
                         web development. 
