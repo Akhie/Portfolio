@@ -21,7 +21,7 @@ export default function Header() {
         <div className='header pt-3'>
         <nav className="navbar navbar-expand-md justify-content-between">
             <Fade delay={300}>
-                <a className="navbar-brand" href="/"><Logo /></a>
+                <a className="navbar-brand" href="/Portfolio"><Logo /></a>
             </Fade>
 
             <div classNameName='d-flex justify-content-end'>
