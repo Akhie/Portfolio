@@ -34,29 +34,8 @@ export default function Main() {
         setActive(num);
     }
 
-    const showBubbleAnimation = (e) => {
-        const bubble = document.querySelectorAll(".bubble");
-                if(bubble.length >= 1) {
-                    bubble.forEach(circ => {
-                    document.body.removeChild(circ);
-                    });
-                } else {
-                    let circle = document.createElement("div");
-                    circle.classList.add("bubble");
-                    circle.style.background = "radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 100%)";
-                    circle.style.position = "absolute";
-                    circle.style.left = e.clientX-50+"px";
-                    circle.style.top = e.clientY-50+"px";
-                    circle.style.borderRadius = 50+"px";
-                    circle.style.width = 100+"px";
-                    circle.style.height = 100+"px";
-                    circle.style.zIndex = "1000";
-                    document.body.appendChild(circle);
-                }
-    }
     const onReset = (e) => {
         setActive(null);
-        setInterval(showBubbleAnimation(e), 100);
     }
 
     return (

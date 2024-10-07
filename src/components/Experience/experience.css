@@ -20,21 +20,37 @@
 .exp {
     margin-left: 30px;
 }
-.expTitle::before {
-  display: inline-block;
-      content: "";
-      border-top: .1rem solid grey;
-      width: 5rem;
-      margin: 5px 0px;
+.hidden {
+    display: none;
+}
+.expand {
+    display: block;
 }
 .period {
-    font-size: 9px;
-    margin-left: 100px;
+    font-size: 10px;
+    margin-left: 50px;
 }
 .expDesc {
     margin-top: 10px;
     margin-left: 50px;
     font-size: 10px
+}
+.nav {
+    display: block
+}
+.expTitle {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.active {
+    color: var(--Green);
+}
+
+.job_description {
+    margin-top: 20px;
+    item-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width: 480px) {
