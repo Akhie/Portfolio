@@ -33,12 +33,12 @@ export default function Experience() {
                     </h5>
                     <div className="samsung">
                         <div className="exp">
-                            <ul class="nav">
-                                <li onClick={() => expandJob()}>
+                            <ul class="">
+                                <div onClick={() => expandJob()}>
                                     <b class="caret"></b>
                                     <i class="fa fa-th-large"></i>
                                     <span className="expHeading"> Samsung Data Systems </span>
-                                </li>
+                                </div>
                                 <ul className={job == true ? "sub-menu expand": "hidden"}>
                                     <li onClick={() => expandSr()} className={senior == true ? "expTitle active" : "expTitle"}> Senior Executive </li>
                                     <li onClick={() => expandAsst()} className={asst == true ? "expTitle active" : "expTitle"}> Asst. Manager </li>
