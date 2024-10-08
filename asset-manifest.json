@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.19364f66.css",
-    "main.js": "/Portfolio/static/js/main.4d152e4c.js",
+    "main.css": "/Portfolio/static/css/main.8e3e35e0.css",
+    "main.js": "/Portfolio/static/js/main.c1beff17.js",
     "static/js/787.dea7560e.chunk.js": "/Portfolio/static/js/787.dea7560e.chunk.js",
     "static/media/uring.png": "/Portfolio/static/media/uring.fc77d601f9ede7000423.png",
     "static/media/justmail.png": "/Portfolio/static/media/justmail.9e62a37eb0f094d0a436.png",
@@ -11,12 +11,12 @@
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.30a3bb6231a512d1602d.pdf",
     "static/media/nit-logo.jpg": "/Portfolio/static/media/nit-logo.4cfc2708ac550f49e8a2.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.19364f66.css.map": "/Portfolio/static/css/main.19364f66.css.map",
-    "main.4d152e4c.js.map": "/Portfolio/static/js/main.4d152e4c.js.map",
+    "main.8e3e35e0.css.map": "/Portfolio/static/css/main.8e3e35e0.css.map",
+    "main.c1beff17.js.map": "/Portfolio/static/js/main.c1beff17.js.map",
     "787.dea7560e.chunk.js.map": "/Portfolio/static/js/787.dea7560e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19364f66.css",
-    "static/js/main.4d152e4c.js"
+    "static/css/main.8e3e35e0.css",
+    "static/js/main.c1beff17.js"
   ]
 }
