@@ -4,9 +4,9 @@ import Fade from 'react-reveal/Fade';
 import './experience.css'
 
 export default function Experience() {
-    const [job, setJob] = useState(false);
-    const [asst, setAsst] = useState(false);
-    const [senior, setSenior] = useState(false);
+    const [job, setJob] = useState(true);
+    const [asst, setAsst] = useState(true);
+    const [senior, setSenior] = useState(true);
 
     const expandJob = () => {
         setAsst(false);
@@ -15,12 +15,10 @@ export default function Experience() {
     }
 
     const expandAsst = () => {
-        setSenior(false);
         setAsst(!asst);
     }
 
     const expandSr = () => {
-        setAsst(false);
         setSenior(!senior);
     }
 
@@ -35,29 +33,37 @@ export default function Experience() {
                         <div className="exp">
                             <ul class="">
                                 <div onClick={() => expandJob()}>
-                                    <b class="caret"></b>
-                                    <i class="fa fa-th-large"></i>
                                     <span className="expHeading"> Samsung Data Systems </span>
                                 </div>
                                 <ul className={job == true ? "sub-menu expand": "hidden"}>
-                                    <li onClick={() => expandSr()} className={senior == true ? "expTitle active" : "expTitle"}> Senior Executive </li>
-                                    <li onClick={() => expandAsst()} className={asst == true ? "expTitle active" : "expTitle"}> Asst. Manager </li>
+                                    <div onClick={() => expandAsst()} className={asst == true ? "expTitle highlighted" : "expTitle"}>
+                                        <span className="vertical-hierarchy"></span>
+                                        <span className="hierarchy"></span>
+                                        <li > Asst. Manager <span className="period"> April 2024 - Present </span> </li>
+                                    </div>
+                                    <div id="asstDesc" className={asst == true ? "job_description expand" : "hidden"}>
+                                        <p className="expDesc"> Developed reusable Vue.js components for the Manufacturing Execution System. </p>
+                                    </div>
+
+                                    <div onClick={() => expandSr()} className={senior == true ? "expTitle highlighted" : "expTitle"}>
+                                        <span className="vertical-hierarchy"></span>
+                                        <span className="hierarchy"></span>
+                                        <li> Senior Executive <span className="period"> May 2022 - March 2024 </span> </li>
+                                    </div>
+                                    <div id="srDesc" className={senior == true ? "job_description expand" : "hidden"}>
+
+                                        <p className="expDesc"> Developed drag and drop canvas-based website for collaboratively creating
+                                            large layouts, managing and optimizing 1,000-5,000 objects. Collaborated with
+                                            a three-person team to enhance code efficiency, resulting in reduced memory
+                                            usage.
+                                        </p>
+                                    </div>
                                 </ul>
 
 
                             </ul>
-                            <div id="asstDesc" className={asst == true ? "job_description expand" : "hidden"}>
-                                <p className="period"> April 2024 - Present </p>
-                                <p className="expDesc"> Developed reusable Vue.js components for the Manufacturing Execution System. </p>
-                            </div>
-                            <div id="srDesc" className={senior == true ? "job_description expand" : "hidden"}>
-                                <p  className="period"> May 2022 - March 2024 </p>
-                                <p className="expDesc"> Developed drag and drop canvas-based website for collaboratively creating
-                                    large layouts, managing and optimizing 1,000-5,000 objects. Collaborated with
-                                    a three-person team to enhance code efficiency, resulting in reduced memory
-                                    usage.
-                                </p>
-                            </div>
+
+
                         </div>
                     </div>
             </Fade>

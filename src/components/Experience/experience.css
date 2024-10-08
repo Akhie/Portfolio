@@ -1,11 +1,11 @@
 .samsung{
     text-align: left;
     margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 .expHeading {
     width: 55%;
-    font-size: 30px;
+    font-size: 24px;
 }
 .expHeading:hover {
     color: var(--Green);
@@ -17,39 +17,51 @@
     vertical-align: middle;
     margin-left: -1em;
 }
-.exp {
-    margin-left: 30px;
-}
 .hidden {
     display: none;
 }
 .expand {
-    display: block;
+    display: grid;
 }
 .period {
     font-size: 10px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .expDesc {
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 10px
+    margin-top: 5px;
+    margin-left: 45px;
+    font-size: 11px
 }
 .nav {
     display: block
 }
 .expTitle {
-    padding-left: 15px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    width: 30%;
+    display: ruby;
 }
-.active {
-    color: var(--Green);
+.hierarchy::before {
+    background-color: var(--LightestNavy);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 2%;
 }
-
+.vertical-hierarchy {
+    display: grid;
+    margin: 15px 0px 0px 8px;
+    height: 10px;
+    float: left;
+    border: 1px inset #a8b2d1;
+}
+.highlighted {
+    color: var(--LightestSlate);
+}
+.sub-menu {
+    margin-left: -55px;
+}
 .job_description {
-    margin-top: 20px;
     item-align: center;
     text-align: left;
 }
