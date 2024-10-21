@@ -93,7 +93,7 @@
   p {
     font-size: 11px;
   }
-  span {
+  .mobile-period {
     font-size: 6px;
   }
   .title::before {
