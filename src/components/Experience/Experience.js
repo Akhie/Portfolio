@@ -55,11 +55,12 @@ export default function Experience() {
                                         <li > Asst. Manager <span className="period"> April 2024 - Present </span> </li>
                                     </div>
                                     <div id="asstDesc" className={asst == true ? "job_description expand" : "hidden"}>
+                                        <span className="desc-vertical-hierarchy"></span>
                                         <p className="expDesc"> Developed reusable Vue.js components for the Manufacturing Execution System. </p>
                                     </div>
 
                                     <div onClick={() => expandSr()} className={senior == true ? "expTitle highlighted" : "expTitle"}>
-                                        <span className="vertical-hierarchy"></span>
+                                        <span style={{marginTop: "-10px"}} className="vertical-hierarchy"></span>
                                         <span className="hierarchy"></span>
                                         <li> Senior Executive <span className="period"> May 2022 - March 2024 </span> </li>
                                     </div>
