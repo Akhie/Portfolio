@@ -44,50 +44,64 @@
 .expTitle {
     display: ruby;
 }
+.hierarchy {
+    position: relative;
+}
 .hierarchy::before {
     background-color: var(--LightestNavy);
     content: "";
     display: inline-block;
-    height: 1px;
+    height: 3px;
     position: relative;
     vertical-align: middle;
-    width: 2%;
+    width: 2.5%;
 }
 .vertical-hierarchy {
     display: grid;
-    margin-top: 15px;
-    height: 10px;
+    height: 30px;
     float: left;
+    width: 1px;
+    margin: 3px 0px;
     border: 1px inset #a8b2d1;
 }
 .highlighted {
     color: var(--LightestSlate);
 }
+.job_description {
+    display: flex;
+}
+.desc-vertical-hierarchy {
+    margin-top: -10px;
+    width: 1px;
+    height: 60px;
+    border: 1px inset #a8b2d1;
+}
+.mobile-exp {
+    display: none;
+}
 
 @media screen and (max-width: 480px) {
   .exp {
-    width: 100%;
-    margin-left: 20px;
+    display: none;
   }
-  .samsung {
-      text-align: center;
-      margin-top: 0;
+  .mobile-exp {
+    margin-top: 20px;
+    margin-left: calc(25px + (100vw - 360px) * 0.35);
+    text-align: left;
+    display: block;
   }
-  .expHeading {
-    font-size: 18px;
-    width: 100%;
+  p {
+    font-size: 11px;
   }
-  .expHeading::before {
-      content: none;
-      display: none;
+  span {
+    font-size: 6px;
   }
-  .expTitle {
-      font-size: 14px;
-
-   }
-  .expDesc {
-      margin-left: 0;
-      font-size: 10px;
+  .title::before {
+    content: "▹";
+    color: var(--Green);
+  }
+  .desc {
+    font-size: 9px;
   }
 }
 

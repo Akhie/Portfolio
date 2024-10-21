@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 import './experience.css'
 
@@ -55,11 +56,12 @@ export default function Experience() {
                                         <li > Asst. Manager <span className="period"> April 2024 - Present </span> </li>
                                     </div>
                                     <div id="asstDesc" className={asst == true ? "job_description expand" : "hidden"}>
+                                        <span className="desc-vertical-hierarchy"></span>
                                         <p className="expDesc"> Developed reusable Vue.js components for the Manufacturing Execution System. </p>
                                     </div>
 
                                     <div onClick={() => expandSr()} className={senior == true ? "expTitle highlighted" : "expTitle"}>
-                                        <span className="vertical-hierarchy"></span>
+                                        <span style={{marginTop: "-10px"}} className="vertical-hierarchy"></span>
                                         <span className="hierarchy"></span>
                                         <li> Senior Executive <span className="period"> May 2022 - March 2024 </span> </li>
                                     </div>
@@ -73,6 +75,20 @@ export default function Experience() {
 
                                 </ul>
                             </ul>
+                        </div>
+
+                        <div className="mobile-exp">
+                            <Bounce>
+                            <h5> Samsung SDS </h5>
+                            <p className="title"> Asst. Manager <span> April 2024 - Present </span> </p>
+                            <p className="desc"> Developed reusable Vue.js components for the Manufacturing Execution System. </p>
+                            <p className="title"> Senior Executive <span> May 2022 - March 2024 </span> </p>
+                            <p className="desc"> Developed drag and drop canvas-based website for collaboratively creating
+                                 large layouts, managing and optimizing 1,000-5,000 objects. Collaborated with
+                                 a three-person team to enhance code efficiency, resulting in reduced memory
+                                 usage.
+                            </p>
+                            </Bounce>
                         </div>
 
             </Fade>
